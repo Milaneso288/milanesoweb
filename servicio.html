@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Servicios - Restaurante Sabores Únicos</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fdf6f0;
+    margin: 0;
+    padding: 20px;
+    color: #444;
+  }
+  header {
+    background: #d35400;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #f39c12;
+  }
+  main {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(211, 84, 0, 0.15);
+    padding: 30px 40px;
+  }
+  main h2 {
+    color: #d35400;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  main p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #555;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #fdebd0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(211, 84, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #d35400;
+  }
+  .card h3 {
+    margin-bottom: 10px;
+    color: #a84300;
+  }
+  .card p {
+    color: #6e2c00;
+    font-size: 1rem;
+  }
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: #f7d6b6;
+    font-size: 0.9rem;
+    color: #784212;
+    margin-top: 40px;
+  }
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      gap: 10px;
+    }
+    nav a {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    main {
+      margin: 20px 15px;
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Restaurante Sabores Únicos</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicio.html" target="_blank" rel="noopener noreferrer">Servicios</a>
+      <a href="redes-sociales.html" target="_blank" rel="noopener noreferrer">Redes Sociales</a>
+      <a href="acerca-de.html" target="_blank" rel="noopener noreferrer">Acerca de</a>
+      <a href="contacto.html" target="_blank" rel="noopener noreferrer">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Servicios que Ofrecemos</h2>
+    <p>En Restaurante Sabores Únicos nos dedicamos a ofrecer experiencias culinarias memorables con un toque de tradición y modernidad. Nuestra misión es deleitar tu paladar con platos elaborados con ingredientes frescos y recetas auténticas.</p>
+
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🍽️</div>
+        <h3>Comida Gourmet</h3>
+        <p>Platos preparados por chefs expertos que combinan sabores tradicionales con técnicas innovadoras.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🎉</div>
+        <h3>Eventos y Catering</h3>
+        <p>Organizamos eventos privados, banquetes y servicios de catering para que tu celebración sea inolvidable.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚚</div>
+        <h3>Delivery y Takeaway</h3>
+        <p>Disfruta de nuestros platillos desde la comodidad de tu hogar con nuestro servicio rápido y confiable.</p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🍷</div>
+        <h3>Selección de Vinos</h3>
+        <p>Una cuidada selección de vinos nacionales e internacionales para maridar perfectamente con tu comida.</p>
+      </div>
+    </div>
+
+    <section style="margin-top: 40px;">
+      <h3>Nuestra Promesa</h3>
+      <p>Nos comprometemos a brindar un ambiente acogedor y un servicio excepcional para que cada visita sea especial. Valoramos la calidad, la frescura y la satisfacción de nuestros clientes.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Restaurante Sabores Únicos. Todos los derechos reservados.
+  </footer>
+
+  <!-- Flecha hacia arriba -->
+  <button class="flecha" id="flechaArriba" onclick="scrollToTop()">⬆️</button>
+
+  <!-- Flecha hacia abajo -->
+  <button class="flecha" id="flechaAbajo" onclick="scrollToBottom()">⬇️</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    function scrollToBottom() {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+
+<button id="btnRegresarInicio" style="
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+  z-index: 1000;
+">
+  Regresar al inicio
+</button>
+
+<script>
+  const btn = document.getElementById('btnRegresarInicio');
+
+  // Al hacer clic, redirige a la página de inicio
+  btn.addEventListener('click', () => {
+    window.location.href = 'index.html'; // Cambia esta URL por la de tu página de inicio
+  });
+
+  // Opcional: Mostrar el botón sólo cuando se hace scroll hacia abajo
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+
+  // Inicialmente oculto
+  btn.style.display = 'none';
+</script>
+
+</body>
+</html>
+
+</body>
+</html>

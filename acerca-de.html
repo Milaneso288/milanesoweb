@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Restaurante Sabor Auténtico - Nuestra Filosofía</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9fafb;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  header {
+    background: #d94f4f;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  nav a:hover {
+    color: #ffb3b3;
+  }
+  main {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 40px 50px;
+  }
+  main h2, main h3 {
+    color: #d94f4f;
+    margin-bottom: 20px;
+  }
+  main h2 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  main h3 {
+    font-size: 2rem;
+  }
+  main p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  section {
+    margin-bottom: 50px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+  }
+  .card {
+    background: #ffe6e6;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(217,79,79,0.15);
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  .card h4 {
+    margin-bottom: 10px;
+    color: #b33030;
+  }
+  .card p {
+    color: #6b4c4c;
+    font-size: 1rem;
+  }
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: #f2dede;
+    font-size: 0.9rem;
+    color: #a94442;
+    margin-top: 40px;
+  }
+  button {
+    background: #d94f4f;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background: #b33030;
+  }
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #b33030;
+  }
+  form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #d94f4f;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      gap: 15px;
+    }
+    nav a {
+      margin-left: 15px;
+      margin-right: 15px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    main {
+      margin: 20px 15px;
+      padding: 25px 20px;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Restaurante Sabor Auténtico</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="menu.html" target="_blank" rel="noopener noreferrer">Menú</a>
+      <a href="nosotros.html" target="_blank" rel="noopener noreferrer">Nosotros</a>
+      <a href="reservas.html" target="_blank" rel="noopener noreferrer">Reservas</a>
+      <a href="contacto.html" target="_blank" rel="noopener noreferrer">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bienvenido a Sabor Auténtico</h2>
+      <p>En Restaurante Sabor Auténtico, nuestro propósito es ofrecerte una experiencia gastronómica inolvidable, combinando ingredientes frescos, recetas tradicionales y un ambiente acogedor para ti y tus seres queridos.</p>
+    </section>
+
+    <section>
+      <h3>Misión</h3>
+      <p>Brindar a nuestra comunidad platillos deliciosos elaborados con ingredientes de la mejor calidad, respetando las tradiciones culinarias y ofreciendo un servicio excepcional que haga que cada visita sea especial.</p>
+    </section>
+
+    <section>
+      <h3>Visión</h3>
+      <p>Convertirnos en el restaurante preferido de la región, reconocido por la autenticidad de nuestros sabores, la innovación constante en nuestro menú y la calidez en nuestro servicio.</p>
+    </section>
+
+    <section>
+      <h3>Menú Destacado</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Entradas</h4>
+          <p>Ensalada César - $80</p>
+          <p>Bruschettas de Tomate - $70</p>
+          <p>Sopa del Día - $60</p>
+        </div>
+        <div class="card">
+          <h4>Platos Fuertes</h4>
+          <p>Filete a la Parrilla - $180</p>
+          <p>Pasta Alfredo con Pollo - $150</p>
+          <p>Tacos de Pescado - $140</p>
+        </div>
+        <div class="card">
+          <h4>Postres</h4>
+          <p>Cheesecake de Fresa - $90</p>
+          <p>Helado Artesanal - $70</p>
+          <p>Brownie con Nueces - $80</p>
+        </div>
+        <div class="card">
+          <h4>Bebidas</h4>
+          <p>Refresco Natural - $40</p>
+          <p>Vino Tinto - $120</p>
+          <p>Café Espresso - $50</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Testimonios</h3>
+      <div class="grid">
+        <div class="card">
+          <p>"El mejor restaurante en la ciudad. La comida es fresca y deliciosa, y el ambiente muy acogedor."</p>
+          <strong>- Ana G.</strong>
+        </div>
+        <div class="card">
+          <p>"El servicio es excepcional y la variedad del menú siempre me sorprende gratamente."</p>
+          <strong>- Carlos M.</strong>
+        </div>
+        <div class="card">
+          <p>"Perfecto para cenas en familia o una noche romántica. Recomendado 100%."</p>
+          <strong>- Laura P.</strong>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Reserva tu Mesa</h3>
+      <form action="#" method="post" onsubmit="alert('¡Gracias por reservar con nosotros! Nos pondremos en contacto contigo pronto.'); return false;">
+        <label for="name">Nombre Completo</label>
+        <input type="text" id="name" name="name" required placeholder="Tu nombre" />
+        
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com" />
+        
+        <label for="date">Fecha</label>
+        <input type="date" id="date" name="date" required />
+        
+        <label for="time">Hora</label>
+        <input type="time" id="time" name="time" required />
+        
+        <label for="people">Número de Personas</label>
+        <select id="people" name="people" required>
+          <option value="" disabled selected>Selecciona</option>
+          <option value="1">1 persona</option>
+          <option value="2">2 personas</option>
+          <option value="3">3 personas</option>
+          <option value="4">4 personas</option>
+          <option value="5">5 o más</option>
+        </select>
+        
+        <button type="submit">Reservar Ahora</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Restaurante Sabor Auténtico. Todos los derechos reservados.
+  </footer>
+ 
+
+  <!-- Flecha hacia arriba -->
+  <button class="flecha" id="flechaArriba" onclick="scrollToTop()">⬆️</button>
+
+  <!-- Flecha hacia abajo -->
+  <button class="flecha" id="flechaAbajo" onclick="scrollToBottom()">⬇️</button>
+
+  <script>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    function scrollToBottom() {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+
+<button id="btnRegresarInicio" style="
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+  z-index: 1000;
+">
+  Regresar al inicio
+</button>
+
+<script>
+  const btn = document.getElementById('btnRegresarInicio');
+
+  // Al hacer clic, redirige a la página de inicio
+  btn.addEventListener('click', () => {
+    window.location.href = 'index.html'; // Cambia esta URL por la de tu página de inicio
+  });
+
+  // Opcional: Mostrar el botón sólo cuando se hace scroll hacia abajo
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+
+  // Inicialmente oculto
+  btn.style.display = 'none';
+</script>
+
+  
+</body>
+</html>
+
+</body>
+</html>
